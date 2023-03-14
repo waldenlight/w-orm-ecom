@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     const productData = await Product.findAll({
-      // include: [{ model: Category }, { model: Tag }],
+      include: [{ model: Category }, { model: Tag }],
     });
     res.status(200).json(productData);
   } catch (err) {
@@ -24,10 +24,10 @@ router.get('/:id', async (req, res) => {
   try {
     const productData = await Product.findByPk(req.params.id, {
       // Add Book as a second model to JOIN with
-      // include: [{ model: Category }, { model: Tag }],
+      include: [{ model: Category }, { model: Tag }],
     });
 
-    if (!readerData) {
+    if (!productData) {
       res.status(404).json({ message: 'No product found with that id!' });
       return;
     }
