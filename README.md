@@ -23,7 +23,7 @@ The backend functionality of an ecommerce site.
 ## Installation
 Clone the repository locally.
 ## Usage
-Run the schema file in the MySQL shell, seed the database by running seeds/index in the command line, test all the routes using Insomnia or Postman.
+(Demo Video)[https://drive.google.com/file/d/1LtG446m6MQeOZ5ngy6rUL50oqYhBAGIo/view]. Run the schema file in the MySQL shell, seed the database by running seeds/index in the command line, test all the routes using Insomnia or Postman.
 ## Credits
 Starter code provided by U of U bootcamp.
 ## License
